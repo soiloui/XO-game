@@ -86,9 +86,13 @@ main {
   font-size: 4rem;
 }
 
+#turn {
+  margin-top: 2rem;
+}
+
 .game_area {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (100px)[3];
@@ -101,6 +105,16 @@ main {
 }
 
 .game_area .area {
-  border: 2px solid #000;
+  border: 2px solid #fff;
+  background-color: black;
+  cursor: pointer;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.game_area .area:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 20px 3px black;
+          box-shadow: 0 0 20px 3px black;
 }
 /*# sourceMappingURL=main.css.map */

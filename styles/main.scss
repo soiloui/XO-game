@@ -49,15 +49,26 @@ main{
     }
 }
 
+#turn{
+    margin-top: 2rem;
+}
+
 .game_area{
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, $area-dimension);
     grid-template-rows: repeat(3, $area-dimension);
     justify-content: center;
     
     .area{
-        border: 2px solid #000;
+        border: 2px solid #fff;
+        background-color: black;
+        cursor: pointer;
+        transition: all .25s ease-in-out;
+        &:hover{
+            background-color: rgba($color: #fff, $alpha: .7);
+            box-shadow: 0 0 20px 3px black;
+        }
     }
 }
