@@ -86,9 +86,13 @@ main {
   font-size: 4rem;
 }
 
+#turn {
+  margin-top: 2rem;
+}
+
 .game_area {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (100px)[3];
@@ -98,9 +102,45 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: white;
+  font-size: 3rem;
 }
 
 .game_area .area {
-  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #fff;
+  background-color: black;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.game_area .area:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 20px 3px black;
+          box-shadow: 0 0 20px 3px black;
+  color: black;
+}
+
+.game_area .area.areaBusy:hover {
+  background-color: black;
+  color: white;
+}
+
+.game_area .area p {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
 }
 /*# sourceMappingURL=main.css.map */
