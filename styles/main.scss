@@ -60,15 +60,30 @@ main{
     grid-template-columns: repeat(3, $area-dimension);
     grid-template-rows: repeat(3, $area-dimension);
     justify-content: center;
+    color: white;
+    font-size: 3rem;
     
     .area{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: 2px solid #fff;
         background-color: black;
         cursor: pointer;
+        user-select: none;
         transition: all .25s ease-in-out;
         &:hover{
             background-color: rgba($color: #fff, $alpha: .7);
             box-shadow: 0 0 20px 3px black;
+            color: black;
+        }
+        &.areaBusy:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        p{
+            transform: translateY(7px);
         }
     }
 }
