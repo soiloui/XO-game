@@ -200,4 +200,16 @@ main {
   -webkit-transform: translateY(7px);
           transform: translateY(7px);
 }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=main.css.map */
