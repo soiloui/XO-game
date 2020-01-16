@@ -1,0 +1,31 @@
+@include media-sm{
+    :root{
+        font-size: 12px;
+    }
+    .game_area{
+        width: 200px;
+        height: 200px;
+        font-size: 24px;
+    }
+}
+@include media-md{
+    :root{
+        font-size: 16px;
+    }
+    .game_area{
+        width: 300px;
+        height: 300px;
+        font-size: 44px;
+    }
+    .score{
+        width: 250px;
+    }
+}
+@include media-lg{
+    .game_area{
+        width: 500px;
+        height: 500px;
+        font-size: 84px;
+    }
+}
+
