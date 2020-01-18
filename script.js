@@ -52,7 +52,7 @@ checkMove = (template, xoro) =>{
         let finded = false;
         console.log(template);
         winTemplate.forEach(combination =>{
-            if(template.toString().includes(combination) && finded == false){
+            if(combination.filter(digit => template.includes(digit.toString())).length==3 && finded==false){
                 if(xoro == 'x'){
                     scoreX++;
                     scoreX_div.innerHTML = scoreX;
